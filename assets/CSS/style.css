@@ -3,8 +3,8 @@
 .header {
     position: fixed;
     top:30px;
-    left:7px;
-    right:0;
+    left: 50%;
+    transform: translateX(-50%);
     width:100vw;
     z-index: 999;
 }
