@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="icon" href="assets/images/logo.png" type="image/x-icon"> -->
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://wowjs.uk/css/libs/animate.css">
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Bootstrap CSS -->
@@ -19,31 +21,31 @@
     <header class="header">
         <div class="container">
             <div class="row">
-                <a href="#" class="inner-logo">
+                <a href="#home" class="inner-logo">
                     <img src="assets/images/logo.png" alt="logo" class="image">
                 </a>
                 <div class="inner-menu">
                     <ul class="inner-list">
                         <li class="inner-item">
-                            <a href="#">Home</a>
+                            <a href="#home">Home</a>
                         </li>
                         <li class="inner-item">
-                            <a href="#">About</a>
+                            <a href="#talk-more">About</a>
                         </li>
                         <li class="inner-item">
-                            <a href="#">Work Process</a>
+                            <a href="#work-process">Work Process</a>
                         </li>
                         <li class="inner-item">
-                            <a href="#">Testimonials</a>
+                            <a href="#testimonials">Testimonials</a>
                         </li>
                         <li class="inner-item">
-                            <a href="#">Pricing Tables</a>
+                            <a href="#pricing-tables">Pricing Tables</a>
                         </li>
                         <li class="inner-item">
-                            <a href="#">Blog Entries</a>
+                            <a href="#blog-entries">Blog Entries</a>
                         </li>
                         <li class="inner-item">
-                            <a href="#">Contact Us</a>
+                            <a href="#contact-us">Contact Us</a>
                         </li>
                     </ul>
                 </div>
@@ -56,9 +58,9 @@
     <!-- End header -->
 
     <!-- Introduction -->
-    <section class="introduction">
+    <section class="introduction" id="home">
         <div class="container">
-            <div class="row">
+            <div class="row wow fadeInUp" data-wow-duration="1s">
                 <div class="col-12">
                     <div class="box-head">
                         <h1 class="inner-title">
@@ -84,8 +86,8 @@
     <section class="feature">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-xl-4 col-lg-4 col-sm-6">
-                    <div class="inner-box">
+                <div class="col-xl-4 col-lg-4 col-sm-6" >
+                    <div class="inner-box wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.1s">
                         <div class="inner-image">
                             <img src="assets/images/featured-item-01.png" alt="Feature" class="image">
                         </div>
@@ -100,7 +102,7 @@
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-sm-6">
-                    <div class="inner-box">
+                    <div class="inner-box wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.25s">
                         <div class="inner-image">
                             <img src="assets/images/featured-item-02.png" alt="Feature" class="image">
                         </div>
@@ -115,7 +117,7 @@
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-sm-6">
-                    <div class="inner-box">
+                    <div class="inner-box wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.4s">
                         <div class="inner-image">
                             <img src="assets/images/featured-item-03.png" alt="Feature" class="image">
                         </div>
@@ -135,12 +137,12 @@
     <!-- End feature -->
 
     <!-- Talk more -->
-    <section class="talk-more">
+    <section class="talk-more" id="talk-more">
         <div class="container">
             <div class="row inner-wrap">
                 <div class="col-xl-6 col-lg-6">
-                    <div class="inner-image">
-                        <img src="assets/images/left-image.png" alt="Picture" class="image animation-left-to-right">
+                    <div class="inner-image wow fadeInLeft" data-wow-duration="0.8s">
+                        <img src="assets/images/left-image.png" alt="Picture" class="image">
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6">
@@ -167,8 +169,8 @@
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6">
-                    <div class="inner-image">
-                        <img src="assets/images/right-image.png" alt="Picture" class="image animation-right-to-left">
+                    <div class="inner-image wow fadeInRight" data-wow-duration="0.8s">
+                        <img src="assets/images/right-image.png" alt="Picture" class="image">
                     </div>
                 </div>
             </div>
@@ -177,7 +179,7 @@
     <!-- End talk more -->
 
     <!-- Work Process -->
-    <section class="work-process">
+    <section class="work-process" id="work-process">
         <div class="container">
             <div class="inner-header">
                 <div class="row">
@@ -193,7 +195,7 @@
                     </div>
                 </div>
             </div>
-            <ul class="inner-list">
+            <ul class="inner-list wow fadeInUp" data-wow-duration="1.5s">
                 <div class="row justify-content-center">
                     <div class="col-xl-2 col-md-3 col-6">
                         <li class="inner-item">
@@ -292,7 +294,7 @@
     <!-- End Work Process -->
 
     <!-- What do they say? -->
-    <section class="what-do-they-say">
+    <section class="what-do-they-say" id="testimonials">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -309,7 +311,7 @@
             <ul class="inner-list">
                 <div class="row justify-content-center">
                     <div class="col-xl-4 col-lg-4 col-md-6 col-12">
-                        <li class="inner-item">
+                        <li class="inner-item wow fadeInUp" data-wow-duration="1s">
                             <div class="inner-box">
                                 <i class="fa-solid fa-comment-dots"></i>
                                 <p class="comment">
@@ -332,7 +334,7 @@
                         </li>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-6 col-12">
-                        <li class="inner-item">
+                        <li class="inner-item wow fadeInUp" data-wow-duration="1.2s">
                             <div class="inner-box">
                                 <i class="fa-solid fa-comment-dots"></i>
                                 <p class="comment">
@@ -355,7 +357,7 @@
                         </li>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-6 col-12">
-                        <li class="inner-item">
+                        <li class="inner-item wow fadeInUp" data-wow-duration="1.4s">
                             <div class="inner-box">
                                 <i class="fa-solid fa-comment-dots"></i>
                                 <p class="comment">
@@ -384,7 +386,7 @@
     <!-- End What do they say? -->
 
     <!-- Pricing Plans -->
-    <section class="pricing-plans">
+    <section class="pricing-plans" id="pricing-tables">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -400,7 +402,7 @@
             </div>
             <ul class="row inner-list justify-content-center">
                 <div class="col-xl-4 col-lg-4 col-md-6 col-12">
-                    <li class="inner-item">
+                    <li class="inner-item wow fadeInUp" data-wow-duration="1.2s">
                         <div class="inner-box">
                             <h3 class="type">
                                 Starter
@@ -435,7 +437,7 @@
                     </li>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-6 col-12">
-                    <li class="inner-item">
+                    <li class="inner-item wow fadeInUp" data-wow-duration="1.4s">
                         <div class="inner-box">
                             <h3 class="type">
                                 Premium
@@ -470,7 +472,7 @@
                     </li>
                 </div>
                 <div class="col-xl-4 col-lg 4 col-md-6 col-12">
-                    <li class="inner-item">
+                    <li class="inner-item wow fadeInUp" data-wow-duration="1.6s">
                         <div class="inner-box">
                             <h3 class="type">
                                 Advanced
@@ -571,7 +573,7 @@
     <!-- End Data table -->
 
     <!-- Blog Entries -->
-    <section class="blog-entries">
+    <section class="blog-entries" id="blog-entries">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -587,7 +589,7 @@
             </div>
             <ul class="row inner-list justify-content-center">
                 <div class="col-lg-4 col-md-6 col-12">
-                    <li class="inner-item">
+                    <li class="inner-item wow fadeInUp" data-wow-duration="1s">
                         <div class="inner-box">
                             <div class="inner-image">
                                 <img src="assets/images/blog-item-01.png" alt="Picture" class="image">
@@ -605,7 +607,7 @@
                     </li>
                 </div>
                 <div class="col-lg-4 col-md-6 col-12">
-                    <li class="inner-item">
+                    <li class="inner-item wow fadeInUp" data-wow-duration="1.2s">
                         <div class="inner-box">
                             <div class="inner-image">
                                 <img src="assets/images/blog-item-02.png" alt="Picture" class="image">
@@ -623,7 +625,7 @@
                     </li>
                 </div>
                 <div class="col-lg-4 col-md-6 col-12">
-                    <li class="inner-item">
+                    <li class="inner-item wow fadeInUp" data-wow-duration="1.4s">
                         <div class="inner-box">
                             <div class="inner-image">
                                 <img src="assets/images/blog-item-03.png" alt="Picture" class="image">
@@ -646,7 +648,7 @@
     <!-- End Blog Entries -->
 
     <!-- Talk to us -->
-    <section class="talk-to-us">
+    <section class="talk-to-us" id="contact-us">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -753,8 +755,26 @@
         </div>
     </footer>
     <!-- End Footer -->
-     
+    <script src="https://wowjs.uk/dist/wow.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-  </body>
+    <script>
+        new WOW().init();
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const targetPosition = target.getBoundingClientRect().top; // Vị trí so với viewport
+                    const offset = window.innerHeight / 7; // Đặt giữa màn hình
+                    const scrollPosition = window.scrollY + targetPosition - offset; // Tính toán vị trí cuộn
+                    window.scrollTo({
+                        top: scrollPosition,
+                        behavior: 'smooth' // Cuộn mượt
+                    });
+                }
+            });
+        });
+    </script>
+</body>
 </html>

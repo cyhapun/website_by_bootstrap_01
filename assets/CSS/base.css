@@ -10,6 +10,10 @@
     --font-family-primary:"Raleway", sans-serif;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 ::selection {
     background: var(--color-primary-two);
     color:#fff;
@@ -88,39 +92,3 @@ a:hover {
 }
 
 /* End box-head */
-
-/* Animation right to left */
-
-@keyframes rightToLeft {
-    from {
-        transform: translateX(80px);
-    }
-    to {
-        transform: translateX(0);
-    }
-}
-
-.animation-right-to-left {
-    transform: translateX(50px);
-    animation: rightToLeft 0.7s ease-out forwards;
-}
-
-/* End Animation right to left */
-
-/* Animation left to right */
-
-@keyframes leftToRight {
-    from {
-        transform: translateX(-80px);
-    }
-    to {
-        transform: translateX(0);
-    }
-}
-
-.animation-left-to-right {
-    transform: translateX(20px);
-    animation: leftToRight 0.7s ease-out forwards;
-}
-
-/* End Animation left to right */
