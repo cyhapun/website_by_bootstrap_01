@@ -10,20 +10,27 @@
 }
 
 .header .container {
-    padding:0px 15px;
     display: flex;
     justify-content: center;
 }
 
 .header .row {
-    width:100%;
-    background-color: #fff;
-    border-radius: 60px;
-    padding:25px 20px;
+    display: inline-flex;
+    width: 100%;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background: #fff;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.header .row .navigation-bar {
+    position: relative;
+    z-index:999;
+    width: 100%;
+    display: flex;
+    padding: 28px 20px;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: nowrap;
 }
 
 .header .inner-logo {
@@ -37,7 +44,6 @@
 
 .header .inner-menu .inner-list {
     display: flex;
-
     justify-content: end;
 }
 
@@ -53,7 +59,62 @@
 }
 
 .header .inner-bar {
-    display:none;
+    display: none;
+    cursor: pointer;
+}
+
+.header .mobile {
+    width: 100%;
+    margin-top:-500px;
+
+}
+
+.header .mobile hr {
+    margin:0;
+    background:#FFFFFD;
+}
+
+.header .mobile .inner-menu-mobile .inner-list .inner-item a {
+    display: inline-block;
+    text-align: center;
+    padding:15px 0;
+    min-width:100%;
+    min-height: 100%;
+    font-weight: 500;
+    font-size:14px;
+}
+
+.header .mobile .inner-menu-mobile .inner-list .inner-item:hover {
+    background: #EEEEEE;
+}
+
+@keyframes shows {
+    from {
+        margin-top:-500px;
+    }
+    to {
+        margin-top:0px;
+    }
+}
+@keyframes hidden {
+    from {
+        margin-top:0px;
+    }
+    to {
+        margin-top:-500px;
+    }
+}
+
+.header .mobile.show {
+    animation-name: shows;
+    animation-duration: 0.36s;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+}
+
+.header .mobile.hidden-item {
+    animation: hidden 0.36s 1;
+    animation-fill-mode: forwards;
 }
 
 @media (max-width:1199.98px) {
