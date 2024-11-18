@@ -25,7 +25,7 @@
 
 .header .row .navigation-bar {
     position: relative;
-    z-index:999;
+    z-index: 999;
     width: 100%;
     display: flex;
     padding: 28px 20px;
@@ -63,10 +63,19 @@
     cursor: pointer;
 }
 
+.header .show-button {
+    display: block!important;
+}
+
+.header .hidden-button {
+    display: none !important;
+}
+
 .header .mobile {
     width: 100%;
     margin-top:-500px;
-
+    position: relative;
+    z-index: -1;
 }
 
 .header .mobile hr {
@@ -94,6 +103,7 @@
     }
     to {
         margin-top:0px;
+        z-index:1;
     }
 }
 @keyframes hidden {
@@ -113,7 +123,8 @@
 }
 
 .header .mobile.hidden-item {
-    animation: hidden 0.36s 1;
+    z-index: -1;
+    animation: hidden 0.5s 1;
     animation-fill-mode: forwards;
 }
 
