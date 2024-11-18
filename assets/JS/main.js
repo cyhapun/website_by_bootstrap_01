@@ -18,6 +18,6 @@ buttonClose.onclick = () => {
 
 menuMobile.onclick = () => {
     menuMobile.classList.remove('show');
-    buttonOpen.style.display = 'block';
-    buttonClose.style.display = 'none';
+    buttonOpen.classList.remove('hidden-button');
+    buttonClose.classList.remove('show-button');
 }
